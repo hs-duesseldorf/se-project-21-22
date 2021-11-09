@@ -22,7 +22,7 @@ class Page1 extends StatelessWidget {
           },
           child: const Text(
             'Go!',
-            style: TextStyle(fontSize: 30),
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.normal),
           ),
         ),
       ),
