@@ -20,7 +20,10 @@ class Page1 extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).push(_createRoute());
           },
-          child: const Text('Go!'),
+          child: const Text(
+            'Go!',
+            style: TextStyle(fontSize: 30),
+          ),
         ),
       ),
     );
@@ -82,7 +85,6 @@ Route _createRoute2() {
   );
 }
 
-
 class Page3 extends StatelessWidget {
   const Page3({Key? key}) : super(key: key);
 
@@ -90,10 +92,8 @@ class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body:
-      Center(
-        child:
-        Image.network(
+      body: Center(
+        child: Image.network(
             'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/1200px-SV-Werder-Bremen-Logo.svg.png'),
       ),
     );
