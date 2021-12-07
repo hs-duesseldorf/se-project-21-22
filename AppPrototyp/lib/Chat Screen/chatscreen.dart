@@ -73,6 +73,15 @@ class _ChatScreenState extends State<ChatScreen> {
             )
           ],
         ),
+        leading: new IconButton(
+          icon: new Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ThirdScreen()),
+            );
+          },
+        ),
         backgroundColor: primaryColor,
       ),
       body: SafeArea(
@@ -138,7 +147,11 @@ class _ChatScreenState extends State<ChatScreen> {
       ),
     );
   }
+
+  ThirdScreen() {}
 }
+
+
 
 class MessagesStream extends StatefulWidget {
   @override
