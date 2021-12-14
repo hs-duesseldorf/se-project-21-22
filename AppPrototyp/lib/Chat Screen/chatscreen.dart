@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:google_fonts/google_fonts.dart';
 
 final StreamController<ChatMessageModel> _chatMessagesStreamController =
-StreamController<ChatMessageModel>.broadcast();
+    StreamController<ChatMessageModel>.broadcast();
 final Stream<ChatMessageModel> _chatMessagesStream =
     _chatMessagesStreamController.stream;
 
@@ -14,6 +14,7 @@ void main() {
   runApp(MyApp());
 }
 
+//Hello it's me, Onur! :D
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -38,8 +39,8 @@ class ChatMessageModel {
   }
 
   List<Object> get props => [
-    message!,
-  ];
+        message!,
+      ];
 }
 
 class ChatScreen extends StatefulWidget {
@@ -124,7 +125,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           'Adding a ChatMessageModel with the message $_userInput to the Stream');
 
                       ChatMessageModel chatMessageModelRecord =
-                      ChatMessageModel(message: _userInput);
+                          ChatMessageModel(message: _userInput);
 
                       _chatMessagesStreamController.add(
                         chatMessageModelRecord,
@@ -150,8 +151,6 @@ class _ChatScreenState extends State<ChatScreen> {
 
   ThirdScreen() {}
 }
-
-
 
 class MessagesStream extends StatefulWidget {
   @override
@@ -187,7 +186,7 @@ class _MessagesStreamState extends State<MessagesStream> {
               if (snapshot.hasData) {
                 return UserChatBubble(
                   chatMessageModelRecord:
-                  _allMessagesContainedInTheStream[index],
+                      _allMessagesContainedInTheStream[index],
                 );
               } else {
                 print(snapshot.connectionState);
