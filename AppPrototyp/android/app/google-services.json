@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "330180656727",
+    "project_id": "buddystudy-bc867",
+    "storage_bucket": "buddystudy-bc867.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330180656727:android:0a92dc132c0c4b17f0ed12",
+        "android_client_info": {
+          "package_name": "com.BuddyStudy.AppPrototyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330180656727-jb4i0is9ccmps9mfvg4vdqj28i1b9o57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnbijdKxANKhbSlCqNyCk7rgd1gX9jsJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330180656727-jb4i0is9ccmps9mfvg4vdqj28i1b9o57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
